@@ -1,0 +1,157 @@
+/* =================
+   Table of Contents 
+
+   1. Global Styles: Global styles for my project.
+   
+   2. Typography: Styles related to text, e.g. h1, h2, p, etc.
+   
+   3. Layout: Styles related with layout, e.g. header, nav, main, section, footer, div, etc.
+   
+   4. Assets: Styles related with the assets of the project, e.g. images, svg, etc.
+   ================= */
+
+/* =================
+   1. Global Styles 
+   ================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --svg-view-mode: none; /* for displaying the container-svg-view when hover/focus */
+
+  margin: 0;
+  background-color: var(--very-dark-blue-main);
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* =================
+   2. Typography 
+   ================= */
+
+.title {
+  padding: 0;
+  padding-top: 0.5em;
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.title:hover,
+.title:focus {
+  color: var(--cyan);
+}
+
+.description-eth {
+  font-size: 1rem;
+  color: var(--soft-blue);
+  padding: 0;
+  padding-top: 0.5em;
+  margin: 0;
+}
+
+.price {
+  padding-left: 0.5em;
+  color: var(--cyan);
+}
+
+.time-left {
+  margin-left: 0.5em;
+  color: var(--soft-blue);
+}
+
+.description-creator {
+  color: var(--soft-blue);
+  padding-left: 1em;
+}
+
+.creator-name {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.creator-name:hover,
+.creator-name:focus {
+  color: var(--cyan);
+}
+
+/* =================
+   3. Layout 
+   ================= */
+
+.container-card {
+  width: 20rem;
+  background-color: var(--very-dark-blue-card);
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.container-eth-data {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--soft-blue);
+}
+
+.container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-creator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.5em;
+}
+
+.container-svg {
+  position: absolute;
+  padding: 9rem;
+  z-index: 1;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.container-svg:hover,
+.container-svg:focus:hover {
+  padding: 7.5rem;
+  --svg-view-mode: block;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+/* =================
+   4. Assets 
+   ================= */
+
+.svg-view {
+  display: var(--svg-view-mode);
+}
+
+.image-equilibrium {
+  width: 100%;
+  border-radius: 1em;
+  z-index: 0;
+}
+
+.image-avatar {
+  width: 2rem;
+  border: 1px solid var(--white);
+  border-radius: 1000000000px;
+}
