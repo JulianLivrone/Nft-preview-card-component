@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://github.com/JulianLivrone/Nft-preview-card-component)
+- Live Site URL: [Live site URL here](https://julianlivrone.github.io/Nft-preview-card-component/)
 
 ## My process
 
